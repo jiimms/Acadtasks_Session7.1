@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+	<head>
+
+		<title>Session7 Like/Unlike</title>
+		<style type="text/css">
+			#change {
+				box-shadow:  2px 2px  2px darkGray;
+				width: 80px;
+				Height: 30px;
+				background: gray;
+				padding: 3px;
+				font-weight: bold;
+				font-size: 16px; 
+				color: white;
+			}
+		</style>
+
+
+		<script type="text/javascript">
+			function change() {
+				
+				if (document.getElementById("change").innerHTML == "Like") {
+				document.getElementById("change").innerHTML ="Unlike";
+				document.getElementById("change").style.background ="red";
+				document.getElementById("change").style.color ="navy";
+			}	else 	{
+					document.getElementById("change").innerHTML = "Like";
+					document.getElementById("change").style.background ="gray";
+					document.getElementById("change").style.color ="white";
+				}
+				
+			}
+		</script>
+	</head>
+
+	<body>
+		<p>Problem Statement: Crate a HTML page holding a "Like" button that changes to "Unlike" when clicked, then again to "Like</p>
+		<a><button onClick = "change()" id = "change">Like</button></a>
+	
+	</body>
